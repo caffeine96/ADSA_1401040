@@ -1,0 +1,9 @@
+According to a CNET report, at least 10 million Android devices have been affected by a Chinese malware called HummingBad. It was first discovered by a security company called Check Point who are said to have been tracking the malware since February. The malware came in to the spotlight earlier this month when CheckPoint published their report From HummingBad to worse. It is suspected that a team of developers at Yingmob, an advertisement analytics company based in Beijing, are responsible for developing the malware. The malware has had its major impacts in China and India, both measuring up to a over a million device each.
+
+HummingBad uses a sophisticated, multi-stage attack chain with two main components. The first component attempts to gain root access on a device with a rootkit that exploits multiple vulnerabilities. If successful, attackers gain full access to a device. If rooting fails, a second component uses a fake system update notification, tricking users into granting HummingBad system-level permissions.
+
+Irrespective of whether rooting is successful, HummingBad downloads as many fraudulent apps to the device as possible. The malicious apps in the HummingBad campaign are made of a mix of several malicious components, many of which have variations with the same functionality. In some cases, the malicious components are dynamically downloaded onto a device after the infected app is installed. Also note, that the malware targets mainly the earlier versions of Android with most of the targeted device running on Jellybean or KitKat. 
+
+To prevent HummingBad, it is advised not to install applications from unrecognized sources. Applications on Play Store are vetted by Google while those which are not do not withhold such guarantees and may be malicious.
+
+If a device is compromised, the only option is to backup the data and hit a factory reset
