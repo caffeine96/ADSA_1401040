@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cmath>
+#include <limits.h>
+using namespace std;
+
+struct count
+{
+	string s;
+	int count;
+};	
+
+
+int matop(int n1,int m1, int n2, int m2)
+{
+	if(m1!=n2)
+		return -1;
+	else
+		return n1*m1*m2;
+}
+
+int mcm(int p[], int i, int j)
+{
+    if(i == j)
+        return 0;
+
+    int min = INT_MAX;
+    int count;
+	int mina;
+ 
+    for (int k = i; k <j; k++)
+    {
+        count = mcm(p, i, k) + mcm(p, k+1, j) + p[i-1]*p[k]*p[j];
+ 
+        if (count < min)
+        { 
+		   min = count;
+		   mina=k;
+		}
+		
+    }
+	
+    return min;
+}
+
+int main()
+{
+	int nomat;
+	std::cin>>nomat;
+	int dim[nomat+1];
+	int temp;	
+
+	for(int i=0;i<nomat+1;++i)
+		cin>>dim[i];
+	
+	temp=mcm(dim,1,nomat-1);	
+	
+	std::cout<<temp;	
+	return 0;
+}
